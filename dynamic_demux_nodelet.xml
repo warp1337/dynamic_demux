@@ -1,0 +1,8 @@
+<!-- Dynamic Image Demug library component -->
+<library path="lib/libdynamic_demux">
+  <class name="dynamic_demux/NodeletDynamicDEMUX" type="NodeletDynamicDEMUX" base_class_type="nodelet::Nodelet">
+    <description>
+      NodeletDynamicDEMUX represent a dynamic demux nodelet for Image topics which can be configured at runtime: it publishes 1 input topic to N output topics.
+    </description>
+  </class>
+</library>

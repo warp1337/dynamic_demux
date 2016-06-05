@@ -1,0 +1,11 @@
+<launch>
+<node pkg="nodelet" type="nodelet" name="dynamic_demux_manager" args="manager" output="screen" />
+  <node pkg="nodelet" type="nodelet" name="dynamic_demux" args="load dynamic_demux/NodeletDynamicDEMUX dynamic_demux_manager" output="screen">
+    <rosparam>
+      output_topics: [ /cam/demux1, /cam/demux2 ]
+    </rosparam>
+    <rosparam>
+      input_topic: /usb_cam/image_raw
+    </rosparam>
+  </node>
+</launch>

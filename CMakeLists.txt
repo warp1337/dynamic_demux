@@ -11,8 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   genmsg
   nodelet
   nodelet_topic_tools
-  pcl_conversions
-  pcl_msgs
   pluginlib
   rosconsole
   roscpp
